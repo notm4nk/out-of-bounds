@@ -151,6 +151,13 @@ body{background:#080c10}.home-app{max-width:none;padding:0}
 .mode-select-screen{max-width:800px;margin:0 auto;padding:48px 24px;text-align:center;min-height:80vh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px}
 .mode-logo{margin-bottom:8px;font-size:18px}
 .mode-cards{display:flex;gap:16px;margin:24px 0;flex-wrap:wrap;justify-content:center}
+.mode-columns{display:flex;gap:24px;margin:24px 0;justify-content:center;flex-wrap:wrap}
+.mode-column{border:2px solid #ff6b35;border-radius:12px;padding:20px;min-width:280px;max-width:340px;background:rgba(255,107,53,0.05)}
+.mode-column-title{font-size:12px;letter-spacing:2px;color:#ff6b35;margin-bottom:16px;text-align:center;font-weight:bold}
+.mode-column .mode-card{width:100%;margin-bottom:12px}
+.mode-column .mode-card:last-child{margin-bottom:0}
+.mode-column.singleplayer{border-color:#fff;background:rgba(255,255,255,0.03)}
+.mode-column.singleplayer .mode-column-title{color:#fff}
 .mode-card{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:28px;text-align:left;max-width:320px;cursor:pointer;color:#fff;transition:border-color .2s}
 .mode-card:hover:not(.disabled){border-color:#ff5c1a}
 .mode-card.disabled{opacity:.5;cursor:not-allowed}
