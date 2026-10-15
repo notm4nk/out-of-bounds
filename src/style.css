@@ -207,4 +207,5 @@ body{background:#080c10}.home-app{max-width:none;padding:0}
 .oob-hero::before{opacity:0.25;background-position:center}
 .oob-title{font-size:clamp(36px,10vw,56px)}
 .mode-select-screen{padding:16px}
+.oob-cards{grid-template-columns:1fr;max-width:400px}
 }
