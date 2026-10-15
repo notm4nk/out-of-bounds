@@ -98,7 +98,7 @@ function ShareResults({state}:{state:State}){
      text+=`  ${tname(s.higher)} ${s.wins[0]}-${s.wins[1]} ${tname(s.lower)}\n`;
    }
  }
- text+=`\nPlay Out of Bounds: https://out-of-bounds-6n4m.onrender.com`;
+ text+=`\nPlay Out of Bounds - Random Drafts + Sim: https://out-of-bounds-6n4m.onrender.com`;
  const copy=async()=>{
    try{await navigator.clipboard.writeText(text);setCopied(true);setTimeout(()=>setCopied(false),2000)}
    catch{setCopied(false)}
