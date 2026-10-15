@@ -95,7 +95,9 @@ body{background:#080c10}.home-app{max-width:none;padding:0}
 .oob-navlinks a.on{color:#fff}
 .oob-navbtn{background:#ff5c1a;border:none;color:#0d0a07;font-weight:700;font-size:12.5px;letter-spacing:.06em;padding:11px 22px;border-radius:7px;cursor:pointer;transition:background .15s;white-space:nowrap}
 .oob-navbtn:hover{background:#ff7040}
-.oob-hero{padding:clamp(60px,10vh,120px) clamp(20px,6vw,80px) clamp(50px,8vh,90px);max-width:1200px;margin:0 auto}
+.oob-hero{padding:clamp(60px,10vh,120px) clamp(20px,6vw,80px) clamp(50px,8vh,90px);max-width:1200px;margin:0 auto;position:relative}
+.oob-hero::before{content:'';position:absolute;inset:0;background:url('/court-sideline.webp') right center/cover no-repeat;opacity:0.35;pointer-events:none;-webkit-mask-image:linear-gradient(to right,transparent 0%,#000 45%);mask-image:linear-gradient(to right,transparent 0%,#000 45%)}
+.oob-heroinner{position:relative;z-index:1}
 .oob-eyebrow{font-size:12px;font-weight:700;letter-spacing:.28em;color:#ff5c1a;margin-bottom:22px}
 .oob-title{font-size:clamp(44px,6.5vw,84px);font-weight:800;line-height:1.04;letter-spacing:-.025em;color:#fff;margin:0 0 24px}
 .oob-title span{color:#ff5c1a}
