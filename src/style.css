@@ -200,3 +200,11 @@ body{background:#080c10}.home-app{max-width:none;padding:0}
 /* Share results */
 .share-results{margin:16px 0;text-align:center}
 .playoff-topbar-btns{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+
+@media(max-width:750px){
+.mode-columns{flex-direction:column;align-items:center}
+.mode-column{min-width:0;width:100%;max-width:400px}
+.oob-hero::before{opacity:0.25;background-position:center}
+.oob-title{font-size:clamp(36px,10vw,56px)}
+.mode-select-screen{padding:16px}
+}
