@@ -229,6 +229,14 @@ useEffect(()=>{
     }
   }
 },[state.playoffMoment,playing]);
+// When the draft ends, auto-set lineups for all CPU teams (covers drafts
+// where the human made the last pick, so the CPU auto-pick effect never ran it)
+useEffect(()=>{
+  if(state.phase!=='lineups'||!state.cpuTeams.length)return;
+  const needs=state.teams.filter(t=>state.cpuTeams.includes(t.id)&&!slots.every(s=>t.lineup[s]));
+  if(!needs.length)return;
+  setState(s=>({...s,teams:s.teams.map(t=>s.cpuTeams.includes(t.id)&&!slots.every(x=>t.lineup[x])?{...t,lineup:autoLineup(t)}:t)}));
+},[state.phase]);
 // Auto-draft for CPU teams with a slight delay so it feels natural
 useEffect(()=>{
   if(state.phase!=='draft')return;
